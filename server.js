@@ -49,6 +49,12 @@ app.get('/about', (request, res) => {
   });
 });
 
+app.get('/project', (request, res) => {
+  res.render('project.hbs', {
+    pageTitle: 'Project page'
+  });
+});
+
 app.get('/bad', (request, res) => {
   res.send({
     errorMessage: 'Server are not available.'
